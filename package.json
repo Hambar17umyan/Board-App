@@ -1,0 +1,14 @@
+{
+  "name": "win11-board-app",
+  "version": "1.0.0",
+  "description": "Modern Windows 11 Smart Board",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "electron": "^29.0.0"
+  }
+}
