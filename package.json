@@ -4,11 +4,27 @@
   "description": "Modern Windows 11 Smart Board",
   "main": "main.js",
   "scripts": {
-    "start": "electron ."
+    "start": "electron .",
+    "dist": "electron-builder --win"
+  },
+  "build": {
+    "appId": "com.smartboard.app",
+    "win": {
+      "target": "nsis"
+    },
+    "nsis": {
+      "oneClick": false,
+      "allowToChangeInstallationDirectory": true,
+      "createDesktopShortcut": true,
+      "createStartMenuShortcut": true
+    }
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
     "electron": "^29.0.0"
+  },
+  "devDependencies": {
+    "electron-builder": "^26.15.3"
   }
 }
